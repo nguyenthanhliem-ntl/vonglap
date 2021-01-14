@@ -6,15 +6,18 @@
 </head>
 <body>
 <script>
-    let number = parseInt(prompt(" nhập số:"));
+    let num = 0;
     let come = 0;
 
-    while ( number != -1 ) {
-        number = prompt("nhập số:");
-        alert(number);
-        come = number + number;
-        alert(come);
+    while ( num != -1 ) {
+        num = parseInt(prompt("enter a number:"));
+        alert(num);
+        come += num  ;
+
     }
+    alert(come)
+
+
 
 </script>
 </body>
