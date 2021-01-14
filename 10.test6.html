@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Number = parseInt(prompt(" Nhập số lượng số nguyên tố bạn cần:"));
+    let a = 1;
+    let b = "s";
+    for ( let N =2; a<=Number; N++) {
+        for (let i = 2; i<N; i++) {
+        if (N%i == 0) {
+            b = "t";
+            break;
+
+        } else {
+            b = "s";
+        }
+    }
+        if (b =="s") {
+            a++;
+       document.write(N+ " ");
+        }
+    }
+
+</script>
+</body>
+</html>
