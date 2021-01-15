@@ -5,25 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
 <script>
     let c = parseInt(prompt("Nhap so luong ban can"));
     let a = 0;
     let b = 1;
     let temp = 1;
-    document.write(a + " ");
-    document.write(b + " ");
-    document.write(b + " ");
-
-
-    for (i = 0; i < c; i++) {
+    let sum = 0;
+    for(i =0; i < c; i++) {
         a = b;
         b = temp;
-        temp = a + b;
-
-        document.write(temp + " ");
-    }
-
+        temp= a+ b;
+        sum+=temp;
+        }
+    document.write("tong laf"+sum);
 </script>
 </body>
 </html>

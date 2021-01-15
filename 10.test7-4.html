@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let c = parseInt(prompt("Nhap so luong ban can"));
+let a= 0;
+let b = 1;
+let temp =1;
+
+
+for(i =0; i < c; i++) {
+a = b;
+b = temp;
+temp= a+ b;
+if (temp%5==0){
+    document.write(temp);
+
+    break;
+}
+}
+</script>
+</body>
+</html>
